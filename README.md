@@ -7,7 +7,7 @@ Workshop content designed to be used by the [Workshopper tool](https://github.co
 Either use the content directly by pointing at this repository
 
 ```
-https://raw.githubusercontent.com/openshift-labs/starter-guides/ocp-3.10/
+https://raw.githubusercontent.com/santiagoangel/starter-guides/ocp-3.10/
 ```
 
 ## Create a full workshop
@@ -16,7 +16,7 @@ You can follow this instructions to create a full workshop site:
 
 ```
 $ oc new-project guides
-$ oc apply -f https://raw.githubusercontent.com/openshift-labs/java-starter-guides/ocp-3.10/guides-template.yaml
+$ oc apply -f https://raw.githubusercontent.com/santiagoangel/java-starter-guides/ocp-3.10/short-guides-template.yaml
 $ oc new-app guide \
              -p CONSOLE_ADDRESS="https://master.osevg.openshiftworkshop.com"
              -p ROUTER_ADDRESS="apps.osevg.openshiftworkshop.com"
@@ -29,7 +29,7 @@ NOTE: You will need the following ENV values:
 
 # Run Guides Locally
 ```
-$ git clone https://github.com/openshift-labs/starter-labs.git
+$ git clone https://github.com/santiagoangel/starter-labs.git
 $ cd starter-labs
 
 $ docker run -it --rm -p 8080:8080 -v $(pwd):/app-data \
